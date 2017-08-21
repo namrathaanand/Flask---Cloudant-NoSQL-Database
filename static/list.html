@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>list files</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Filename</th>
+            <th>Last Modified Time</th>
+        </tr>
+        {%for l in list%}
+            <tr>
+                <td>{{l[0]}}</td>
+                <td>{{l[1]}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
